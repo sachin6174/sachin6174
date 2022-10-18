@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on React Apps
 - 📫 How to reach me at sachinmehtab@gmail.com
 - www.sachinkumar.software
-- https://morning-lowlands-78457.herokuapp.com/
+- www.sachinkumar6174.me
 <!---
 sachin6174/sachin6174 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
