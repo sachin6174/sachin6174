@@ -1,10 +1,26 @@
-- 👋 Hi, I’m @sachin6174
-- 👀 I’m interested in Devops Webdevelopment Network-security Machine learning
-- 🌱 I’m currently learning and working on React
-- 💞️ I’m looking to collaborate on React Apps
-- 📫 How to reach me at sachinmehtab@gmail.com
+# Hi, I'm Sachin Kumar 👋
 
-<!---
-sachin6174/sachin6174 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I am a macOS developer with extensive experience in building robust and innovative solutions. Over the past 2 years, I have contributed to the development of the SureMDM product, where I worked on an agent application that manages various macOS device-side jobs. When I'm not coding, I enjoy reading Hindi literature, drawing portraits, listening to music, and exploring new ideas.
+
+---
+
+## 🔗 Contact Me
+
+- **Email:** [sachinmehtab@gmail.com](mailto:sachinmehtab@gmail.com)
+- **Phone:** +91 9501841073
+- **LinkedIn:** [sachinkumar6174](https://www.linkedin.com/in/sachinkumar6174)
+- **GitHub:** [sachin6174](https://github.com/sachin6174)
+
+---
+
+## 💻 Skills
+
+- **Languages & Frameworks:** Swift, UIKit, SwiftUI, Objective-C (Basics)
+- **Tools & Technologies:** CoreData, Xcode, XCTest & XCUITest, React, Node
+- **Architecture:** MVC, MVVM
+- **Other:** Debugging, System Design, Git/GitHub/GitLab, SQL, MongoDB
+
+## 📫 Let's Connect
+
+I'm always excited to collaborate on interesting projects or chat about macOS development. Feel free to reach out if you’d like to connect or work together!
+
