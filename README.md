@@ -7,7 +7,6 @@ I am a macOS developer with extensive experience in building robust and innovati
 ## 🔗 Contact Me
 
 - **Email:** [sachinmehtab@gmail.com](mailto:sachinmehtab@gmail.com)
-- **Phone:** +91 9501841073
 - **LinkedIn:** [sachinkumar6174](https://www.linkedin.com/in/sachinkumar6174)
 - **GitHub:** [sachin6174](https://github.com/sachin6174)
 
