@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=sachin6174&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
   <a href="https://github.com/sachin6174">
-    <img src="https://img.shields.io/github/followers/sachin6174?label=Followers&style=social" alt="GitHub followers" />
+    <img src="https://img.shields.io/badge/Followers-sachin6174-blue?style=social&logo=github" alt="GitHub followers" />
   </a>
 </p>
 
@@ -82,11 +82,11 @@ When I'm not coding, I enjoy:
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sachin6174&show_icons=true&theme=radical&hide_border=true" alt="Sachin's GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sachin6174&theme=radical&hide_border=true" alt="Sachin's GitHub Streak" />
+  <img src="https://github-stats-extended.vercel.app/api?username=sachin6174&show_icons=true&theme=radical&hide_border=true" alt="Sachin's GitHub Stats" />
+  <img src="https://streak-stats.demolab.com/?user=sachin6174&theme=radical&hide_border=true" alt="Sachin's GitHub Streak" />
 </p>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin6174&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=sachin6174&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
 </p>
 
 ---
