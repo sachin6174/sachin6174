@@ -83,10 +83,10 @@ When I'm not coding, I enjoy:
 
 <p align="center">
   <img src="https://github-stats-extended.vercel.app/api?username=sachin6174&show_icons=true&theme=radical&hide_border=true" alt="Sachin's GitHub Stats" />
-  <img src="https://streak-stats.demolab.com/?user=sachin6174&theme=radical&hide_border=true" alt="Sachin's GitHub Streak" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=sachin6174&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
 </p>
 <p align="center">
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=sachin6174&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sachin6174&theme=radical" alt="Sachin's Contribution Graph" />
 </p>
 
 ---
