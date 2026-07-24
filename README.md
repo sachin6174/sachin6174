@@ -18,6 +18,9 @@
   <a href="https://www.linkedin.com/in/sachinkumar6174">
     <img src="https://img.shields.io/badge/LinkedIn-Sachin%20Kumar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
+  <a href="https://leetcode.com/u/sachinkumar6174/">
+    <img src="https://img.shields.io/badge/LeetCode-sachinkumar6174-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
+  </a>
 </p>
 
 ---
@@ -79,11 +82,16 @@ When I'm not coding, I enjoy:
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub & Coding Stats
 
 <p align="center">
   <img src="https://github-stats-extended.vercel.app/api?username=sachin6174&show_icons=true&theme=radical&hide_border=true" alt="Sachin's GitHub Stats" />
   <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=sachin6174&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+</p>
+<p align="center">
+  <a href="https://leetcode.com/u/sachinkumar6174/">
+    <img src="https://leetcard.jacoblin.cool/sachinkumar6174?theme=radical" alt="Sachin's LeetCode Stats" />
+  </a>
 </p>
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=sachin6174&theme=radical" alt="Sachin's Contribution Graph" />
