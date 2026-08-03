@@ -99,6 +99,16 @@ When I'm not coding, I enjoy:
 
 ---
 
+## 🏆 Achievements
+
+<p align="center">
+  <img src="assets/achievements/quickdraw.png" width="96" alt="Quickdraw" />
+  <img src="assets/achievements/pull_shark.png" width="96" alt="Pull Shark" />
+</p>
+
+---
+
+
 ## 📫 Let's Connect
 
 I'm always excited to collaborate on interesting projects or chat about Apple ecosystem development. Feel free to reach out if you’d like to connect or work together!
