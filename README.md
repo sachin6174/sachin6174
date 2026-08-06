@@ -90,7 +90,7 @@ When I'm not coding, I enjoy:
 </p>
 <p align="center">
   <a href="https://leetcode.com/u/sachinkumar6174/">
-    <img src="https://leetcard.jacoblin.cool/sachinkumar6174?theme=radical" alt="Sachin's LeetCode Stats" />
+    <img src="https://leetcard.jacoblin.cool/sachinkumar6174?theme=radical&ext=heatmap" alt="Sachin's LeetCode Stats & Heatmap" />
   </a>
 </p>
 <p align="center">
