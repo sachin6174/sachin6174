@@ -1,0 +1,735 @@
+<svg width="860" height="375" viewBox="0 0 860" height="375" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap');
+      
+      * {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      
+      .bg {
+        fill: #1a1a1a;
+        stroke: #2e2e2e;
+        stroke-width: 1.5;
+        rx: 14;
+      }
+      
+      .card-bg {
+        fill: #262626;
+        stroke: #363636;
+        stroke-width: 1;
+        rx: 10;
+      }
+      
+      .title-text {
+        font-size: 15px;
+        font-weight: 700;
+        fill: #ffffff;
+      }
+      
+      .subtitle-text {
+        font-size: 11.5px;
+        font-weight: 500;
+        fill: #999999;
+      }
+      
+      .stat-big {
+        font-size: 20px;
+        font-weight: 800;
+        fill: #ffffff;
+      }
+      
+      .stat-sub {
+        font-size: 9.5px;
+        font-weight: 600;
+        fill: #8a8a8a;
+      }
+      
+      .diff-label {
+        font-size: 11px;
+        font-weight: 600;
+      }
+      
+      .diff-easy { fill: #00b8a3; }
+      .diff-med { fill: #ffc01e; }
+      .diff-hard { fill: #ef4743; }
+      
+      .diff-count {
+        font-size: 12px;
+        font-weight: 700;
+        fill: #ffffff;
+      }
+      
+      .diff-total {
+        font-size: 10px;
+        font-weight: 500;
+        fill: #6e6e6e;
+      }
+      
+      .diff-bar-bg {
+        fill: #383838;
+        rx: 2;
+      }
+      
+      .cal-month {
+        font-size: 9.5px;
+        font-weight: 500;
+        fill: #808080;
+      }
+      
+      .cal-day {
+        font-size: 8.5px;
+        font-weight: 500;
+        fill: #6a6a6a;
+      }
+      
+      .cal-summary-num {
+        font-size: 13.5px;
+        font-weight: 700;
+        fill: #ffffff;
+      }
+      
+      .cal-summary-lbl {
+        font-size: 11.5px;
+        font-weight: 500;
+        fill: #909090;
+      }
+      
+      .badge-title {
+        font-size: 10px;
+        font-weight: 600;
+        fill: #dedede;
+      }
+      
+      .badge-sub {
+        font-size: 9px;
+        font-weight: 500;
+        fill: #808080;
+      }
+      
+      .header-chip {
+        fill: #242424;
+        stroke: #383838;
+        stroke-width: 1;
+        rx: 6;
+      }
+    </style>
+    
+    <!-- Gradients -->
+    <linearGradient id="easyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00b8a3"/>
+      <stop offset="100%" stop-color="#26e2cb"/>
+    </linearGradient>
+    <linearGradient id="medGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffc01e"/>
+      <stop offset="100%" stop-color="#ffd56b"/>
+    </linearGradient>
+    <linearGradient id="hardGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4743"/>
+      <stop offset="100%" stop-color="#ff6b67"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="2" y="2" width="856" height="371" class="bg"/>
+
+  <!-- Header -->
+  <g transform="translate(20, 18)">
+    <!-- LeetCode Icon -->
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+      <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.261a1.38 1.38 0 0 0-.012 1.948 1.372 1.372 0 0 0 1.947.012l5.406-5.823a.46.46 0 0 1 .326-.149.46.46 0 0 1 .459.459c0 .121-.048.232-.128.313l-9.14 9.14a3.68 3.68 0 0 0 0 5.207l1.458 1.458a3.68 3.68 0 0 0 5.207 0l8.777-8.777a1.372 1.372 0 0 0-1.94-1.94l-8.777 8.777a.92.92 0 0 1-1.302 0L7.66 19.43a.92.92 0 0 1 0-1.302L16.8 8.988a3.68 3.68 0 0 0 0-5.207L14.444.438A1.374 1.374 0 0 0 13.483 0z" fill="#FFA116"/>
+      <path d="M4.094 13.069a1.372 1.372 0 0 0-1.94 1.94l2.5 2.5a1.372 1.372 0 1 0 1.94-1.94l-2.5-2.5z" fill="#B3B3B3"/>
+    </svg>
+
+    <text x="34" y="15" class="title-text">Sachin Kumar</text>
+    <text x="34" y="28" class="subtitle-text">@sachinkumar6174 • Global Rank #6,12,217 • 🇮🇳</text>
+
+    <!-- Top Chips -->
+    <g transform="translate(535, -2)">
+      <rect x="0" y="0" width="90" height="28" class="header-chip"/>
+      <text x="45" y="18" text-anchor="middle" font-size="11" fill="#ffa116" font-weight="700">🔥 42d Streak</text>
+      
+      <rect x="96" y="0" width="100" height="28" class="header-chip"/>
+      <text x="146" y="18" text-anchor="middle" font-size="11" fill="#00b8a3" font-weight="700">⚡ 288d Active</text>
+
+      <rect x="202" y="0" width="96" height="28" class="header-chip"/>
+      <text x="250" y="18" text-anchor="middle" font-size="11" fill="#eff1f6" font-weight="700">⚔️ 1,389 Rating</text>
+    </g>
+  </g>
+
+  <!-- Left Card: Solved Problems -->
+  <g transform="translate(20, 60)">
+    <rect x="0" y="0" width="240" height="270" class="card-bg"/>
+    <text x="14" y="22" font-size="12" font-weight="700" fill="#ffffff">Solved Problems</text>
+
+    <!-- Donut Gauge Chart -->
+    <g transform="translate(0, 32)">
+      <!-- Background Track -->
+      <circle cx="58" cy="60" r="38" fill="none" stroke="#363636" stroke-width="7.5" />
+      
+      <!-- Easy Arc -->
+      <circle cx="58" cy="60" r="38" fill="none" stroke="url(#easyGrad)" stroke-width="7.5"
+        stroke-dasharray="122.17850179351554 238.76104167282426"
+        stroke-dashoffset="0"
+        stroke-linecap="round"
+        transform="rotate(-90 58 60)" />
+
+      <!-- Medium Arc -->
+      <circle cx="58" cy="60" r="38" fill="none" stroke="url(#medGrad)" stroke-width="7.5"
+        stroke-dasharray="110.05391764606743 238.76104167282426"
+        stroke-dashoffset="-122.17850179351554"
+        stroke-linecap="round"
+        transform="rotate(-90 58 60)" />
+
+      <!-- Hard Arc -->
+      <circle cx="58" cy="60" r="38" fill="none" stroke="url(#hardGrad)" stroke-width="7.5"
+        stroke-dasharray="6.528622233241288 238.76104167282426"
+        stroke-dashoffset="-232.23241943958297"
+        stroke-linecap="round"
+        transform="rotate(-90 58 60)" />
+
+      <!-- Center Text -->
+      <text x="58" y="56" text-anchor="middle" class="stat-big">256</text>
+      <text x="58" y="70" text-anchor="middle" class="stat-sub">SOLVED</text>
+      <text x="58" y="82" text-anchor="middle" font-size="8.5" fill="#666666">/4029</text>
+    </g>
+
+    <!-- Difficulty Bars on the Right side of Left card -->
+    <g transform="translate(122, 38)">
+      <!-- Easy -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="9" class="diff-label diff-easy">Easy</text>
+        <text x="104" y="9" text-anchor="end">
+          <tspan class="diff-count">131</tspan>
+          <tspan class="diff-total">/960</tspan>
+        </text>
+        <rect x="0" y="14" width="104" height="4" class="diff-bar-bg"/>
+        <rect x="0" y="14" width="14" height="4" fill="url(#easyGrad)" rx="2"/>
+      </g>
+
+      <!-- Medium -->
+      <g transform="translate(0, 32)">
+        <text x="0" y="9" class="diff-label diff-med">Med.</text>
+        <text x="104" y="9" text-anchor="end">
+          <tspan class="diff-count">118</tspan>
+          <tspan class="diff-total">/2103</tspan>
+        </text>
+        <rect x="0" y="14" width="104" height="4" class="diff-bar-bg"/>
+        <rect x="0" y="14" width="6" height="4" fill="url(#medGrad)" rx="2"/>
+      </g>
+
+      <!-- Hard -->
+      <g transform="translate(0, 64)">
+        <text x="0" y="9" class="diff-label diff-hard">Hard</text>
+        <text x="104" y="9" text-anchor="end">
+          <tspan class="diff-count">7</tspan>
+          <tspan class="diff-total">/966</tspan>
+        </text>
+        <rect x="0" y="14" width="104" height="4" class="diff-bar-bg"/>
+        <rect x="0" y="14" width="2" height="4" fill="url(#hardGrad)" rx="2"/>
+      </g>
+    </g>
+
+    <!-- Top Languages Breakdown -->
+    <g transform="translate(14, 155)">
+      <line x1="0" y1="0" x2="212" y2="0" stroke="#333333" stroke-width="1"/>
+      <text x="0" y="16" font-size="10" font-weight="700" fill="#888888">TOP LANGUAGES</text>
+      
+      <g transform="translate(0, 24)">
+        
+          <g transform="translate(0, 0)">
+            <text x="0" y="10" font-size="11" font-weight="600" fill="#e0e0e0">C++</text>
+            <text x="0" y="22" font-size="9.5" font-weight="500" fill="#888888">40 solved</text>
+          </g>
+        
+          <g transform="translate(108, 0)">
+            <text x="0" y="10" font-size="11" font-weight="600" fill="#e0e0e0">Java</text>
+            <text x="0" y="22" font-size="9.5" font-weight="500" fill="#888888">1 solved</text>
+          </g>
+        
+      </g>
+      <g transform="translate(0, 56)">
+        
+          <g transform="translate(0, 0)">
+            <text x="0" y="10" font-size="11" font-weight="600" fill="#e0e0e0">JavaScript</text>
+            <text x="0" y="22" font-size="9.5" font-weight="500" fill="#888888">1 solved</text>
+          </g>
+        
+          <g transform="translate(108, 0)">
+            <text x="0" y="10" font-size="11" font-weight="600" fill="#e0e0e0">Swift</text>
+            <text x="0" y="22" font-size="9.5" font-weight="500" fill="#888888">242 solved</text>
+          </g>
+        
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Card: Submissions Heatmap & Badges -->
+  <g transform="translate(270, 60)">
+    <rect x="0" y="0" width="570" height="270" class="card-bg"/>
+
+    <!-- Heatmap Title & Summary Header -->
+    <g transform="translate(16, 20)">
+      <text x="0" y="2" class="cal-summary-lbl">
+        <tspan class="cal-summary-num">610</tspan> submissions in the past year
+      </text>
+      <text x="538" y="2" text-anchor="end" class="cal-summary-lbl">
+        Max streak: <tspan class="cal-summary-num">42</tspan> days
+      </text>
+    </g>
+
+    <!-- Calendar Month Labels -->
+    <g transform="translate(-270, -60)">
+      <text x="296.0" y="129" class="cal-month">Aug</text>
+<text x="326.3" y="129" class="cal-month">Sep</text>
+<text x="366.7" y="129" class="cal-month">Oct</text>
+<text x="407.1" y="129" class="cal-month">Nov</text>
+<text x="457.6" y="129" class="cal-month">Dec</text>
+<text x="498.0" y="129" class="cal-month">Jan</text>
+<text x="538.4" y="129" class="cal-month">Feb</text>
+<text x="578.8" y="129" class="cal-month">Mar</text>
+<text x="629.3" y="129" class="cal-month">Apr</text>
+<text x="669.7" y="129" class="cal-month">May</text>
+<text x="720.2" y="129" class="cal-month">Jun</text>
+<text x="760.6" y="129" class="cal-month">Jul</text>
+<text x="801.0" y="129" class="cal-month">Aug</text>
+
+    </g>
+
+    <!-- Calendar Day Labels -->
+    <g transform="translate(8, 54)">
+      <text x="0" y="8" class="cal-day">Mon</text>
+      <text x="0" y="28" class="cal-day">Wed</text>
+      <text x="0" y="48" class="cal-day">Fri</text>
+    </g>
+
+    <!-- Calendar Cells Grid -->
+    <g transform="translate(-270, -60)">
+      <rect x="296.0" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-08-16: 0 submissions</title></rect>
+<rect x="296.0" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-08-17: 0 submissions</title></rect>
+<rect x="296.0" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-18: 3 submissions</title></rect>
+<rect x="296.0" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-08-19: 1 submissions</title></rect>
+<rect x="296.0" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-20: 2 submissions</title></rect>
+<rect x="296.0" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-21: 3 submissions</title></rect>
+<rect x="296.0" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-22: 3 submissions</title></rect>
+<rect x="306.1" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-08-23: 1 submissions</title></rect>
+<rect x="306.1" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-24: 3 submissions</title></rect>
+<rect x="306.1" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-25: 2 submissions</title></rect>
+<rect x="306.1" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-26: 2 submissions</title></rect>
+<rect x="306.1" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-08-27: 5 submissions</title></rect>
+<rect x="306.1" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-28: 2 submissions</title></rect>
+<rect x="306.1" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-29: 2 submissions</title></rect>
+<rect x="316.2" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-30: 3 submissions</title></rect>
+<rect x="316.2" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-08-31: 2 submissions</title></rect>
+<rect x="316.2" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-01: 2 submissions</title></rect>
+<rect x="316.2" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-02: 2 submissions</title></rect>
+<rect x="316.2" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-03: 2 submissions</title></rect>
+<rect x="316.2" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-04: 3 submissions</title></rect>
+<rect x="316.2" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-09-05: 4 submissions</title></rect>
+<rect x="326.3" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-09-06: 1 submissions</title></rect>
+<rect x="326.3" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-09-07: 1 submissions</title></rect>
+<rect x="326.3" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-08: 2 submissions</title></rect>
+<rect x="326.3" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-09: 2 submissions</title></rect>
+<rect x="326.3" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-09-10: 0 submissions</title></rect>
+<rect x="326.3" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-11: 3 submissions</title></rect>
+<rect x="326.3" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-09-12: 1 submissions</title></rect>
+<rect x="336.4" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-09-13: 4 submissions</title></rect>
+<rect x="336.4" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-09-14: 4 submissions</title></rect>
+<rect x="336.4" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-09-15: 1 submissions</title></rect>
+<rect x="336.4" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-16: 2 submissions</title></rect>
+<rect x="336.4" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-09-17: 1 submissions</title></rect>
+<rect x="336.4" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-09-18: 5 submissions</title></rect>
+<rect x="336.4" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-09-19: 1 submissions</title></rect>
+<rect x="346.5" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-20: 3 submissions</title></rect>
+<rect x="346.5" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-21: 2 submissions</title></rect>
+<rect x="346.5" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-09-22: 1 submissions</title></rect>
+<rect x="346.5" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-23: 2 submissions</title></rect>
+<rect x="346.5" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-24: 3 submissions</title></rect>
+<rect x="346.5" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-09-25: 5 submissions</title></rect>
+<rect x="346.5" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-09-26: 5 submissions</title></rect>
+<rect x="356.6" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-09-27: 4 submissions</title></rect>
+<rect x="356.6" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-09-28: 2 submissions</title></rect>
+<rect x="356.6" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-09-29: 0 submissions</title></rect>
+<rect x="356.6" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-09-30: 1 submissions</title></rect>
+<rect x="356.6" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2cbb5d"><title>2025-10-01: 8 submissions</title></rect>
+<rect x="356.6" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-10-02: 4 submissions</title></rect>
+<rect x="356.6" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-03: 3 submissions</title></rect>
+<rect x="366.7" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-04: 2 submissions</title></rect>
+<rect x="366.7" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-05: 3 submissions</title></rect>
+<rect x="366.7" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-06: 3 submissions</title></rect>
+<rect x="366.7" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-10-07: 5 submissions</title></rect>
+<rect x="366.7" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-08: 3 submissions</title></rect>
+<rect x="366.7" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-09: 2 submissions</title></rect>
+<rect x="366.7" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-10: 1 submissions</title></rect>
+<rect x="376.8" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-11: 3 submissions</title></rect>
+<rect x="376.8" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-12: 1 submissions</title></rect>
+<rect x="376.8" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-13: 1 submissions</title></rect>
+<rect x="376.8" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-14: 3 submissions</title></rect>
+<rect x="376.8" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-15: 1 submissions</title></rect>
+<rect x="376.8" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-16: 1 submissions</title></rect>
+<rect x="376.8" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-17: 1 submissions</title></rect>
+<rect x="386.9" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-10-18: 0 submissions</title></rect>
+<rect x="386.9" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-10-19: 4 submissions</title></rect>
+<rect x="386.9" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-20: 2 submissions</title></rect>
+<rect x="386.9" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-21: 3 submissions</title></rect>
+<rect x="386.9" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-22: 1 submissions</title></rect>
+<rect x="386.9" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-23: 1 submissions</title></rect>
+<rect x="386.9" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-10-24: 0 submissions</title></rect>
+<rect x="397.0" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-25: 1 submissions</title></rect>
+<rect x="397.0" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-26: 1 submissions</title></rect>
+<rect x="397.0" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-27: 2 submissions</title></rect>
+<rect x="397.0" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-10-28: 0 submissions</title></rect>
+<rect x="397.0" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-29: 2 submissions</title></rect>
+<rect x="397.0" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-10-30: 1 submissions</title></rect>
+<rect x="397.0" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-10-31: 2 submissions</title></rect>
+<rect x="407.1" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-01: 1 submissions</title></rect>
+<rect x="407.1" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-11-02: 2 submissions</title></rect>
+<rect x="407.1" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-11-03: 3 submissions</title></rect>
+<rect x="407.1" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-04: 1 submissions</title></rect>
+<rect x="407.1" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-11-05: 3 submissions</title></rect>
+<rect x="407.1" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-11-06: 4 submissions</title></rect>
+<rect x="407.1" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-07: 1 submissions</title></rect>
+<rect x="417.2" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-11-08: 5 submissions</title></rect>
+<rect x="417.2" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-11-09: 4 submissions</title></rect>
+<rect x="417.2" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-11-10: 2 submissions</title></rect>
+<rect x="417.2" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-11-11: 0 submissions</title></rect>
+<rect x="417.2" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-11-12: 0 submissions</title></rect>
+<rect x="417.2" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-11-13: 4 submissions</title></rect>
+<rect x="417.2" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-11-14: 2 submissions</title></rect>
+<rect x="427.3" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-11-15: 0 submissions</title></rect>
+<rect x="427.3" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-16: 1 submissions</title></rect>
+<rect x="427.3" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-11-17: 4 submissions</title></rect>
+<rect x="427.3" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-11-18: 0 submissions</title></rect>
+<rect x="427.3" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-11-19: 3 submissions</title></rect>
+<rect x="427.3" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-11-20: 6 submissions</title></rect>
+<rect x="427.3" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-21: 1 submissions</title></rect>
+<rect x="437.4" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-22: 1 submissions</title></rect>
+<rect x="437.4" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-11-23: 4 submissions</title></rect>
+<rect x="437.4" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-24: 1 submissions</title></rect>
+<rect x="437.4" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-25: 1 submissions</title></rect>
+<rect x="437.4" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-26: 1 submissions</title></rect>
+<rect x="437.4" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-27: 1 submissions</title></rect>
+<rect x="437.4" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-11-28: 0 submissions</title></rect>
+<rect x="447.5" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-11-29: 2 submissions</title></rect>
+<rect x="447.5" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-11-30: 1 submissions</title></rect>
+<rect x="447.5" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-12-01: 1 submissions</title></rect>
+<rect x="447.5" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2025-12-02: 4 submissions</title></rect>
+<rect x="447.5" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-12-03: 3 submissions</title></rect>
+<rect x="447.5" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2cbb5d"><title>2025-12-04: 8 submissions</title></rect>
+<rect x="447.5" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-05: 0 submissions</title></rect>
+<rect x="457.6" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-06: 0 submissions</title></rect>
+<rect x="457.6" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-12-07: 1 submissions</title></rect>
+<rect x="457.6" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-12-08: 1 submissions</title></rect>
+<rect x="457.6" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-12-09: 1 submissions</title></rect>
+<rect x="457.6" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-12-10: 3 submissions</title></rect>
+<rect x="457.6" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-12-11: 1 submissions</title></rect>
+<rect x="457.6" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-12: 0 submissions</title></rect>
+<rect x="467.7" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-13: 0 submissions</title></rect>
+<rect x="467.7" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-12-14: 1 submissions</title></rect>
+<rect x="467.7" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-12-15: 2 submissions</title></rect>
+<rect x="467.7" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-12-16: 2 submissions</title></rect>
+<rect x="467.7" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-12-17: 2 submissions</title></rect>
+<rect x="467.7" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2025-12-18: 1 submissions</title></rect>
+<rect x="467.7" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2025-12-19: 3 submissions</title></rect>
+<rect x="477.8" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-20: 0 submissions</title></rect>
+<rect x="477.8" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-21: 0 submissions</title></rect>
+<rect x="477.8" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-22: 0 submissions</title></rect>
+<rect x="477.8" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-23: 0 submissions</title></rect>
+<rect x="477.8" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-24: 0 submissions</title></rect>
+<rect x="477.8" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-25: 0 submissions</title></rect>
+<rect x="477.8" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-26: 0 submissions</title></rect>
+<rect x="487.9" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-27: 0 submissions</title></rect>
+<rect x="487.9" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-28: 0 submissions</title></rect>
+<rect x="487.9" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-29: 0 submissions</title></rect>
+<rect x="487.9" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-30: 0 submissions</title></rect>
+<rect x="487.9" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2025-12-31: 0 submissions</title></rect>
+<rect x="487.9" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-01-01: 0 submissions</title></rect>
+<rect x="487.9" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-01-02: 3 submissions</title></rect>
+<rect x="498.0" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-01-03: 2 submissions</title></rect>
+<rect x="498.0" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-01-04: 2 submissions</title></rect>
+<rect x="498.0" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-05: 1 submissions</title></rect>
+<rect x="498.0" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-06: 1 submissions</title></rect>
+<rect x="498.0" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-01-07: 2 submissions</title></rect>
+<rect x="498.0" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-01-08: 5 submissions</title></rect>
+<rect x="498.0" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-09: 1 submissions</title></rect>
+<rect x="508.1" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-01-10: 2 submissions</title></rect>
+<rect x="508.1" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-11: 1 submissions</title></rect>
+<rect x="508.1" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-01-12: 2 submissions</title></rect>
+<rect x="508.1" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-01-13: 5 submissions</title></rect>
+<rect x="508.1" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-01-14: 2 submissions</title></rect>
+<rect x="508.1" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-15: 1 submissions</title></rect>
+<rect x="508.1" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-01-16: 0 submissions</title></rect>
+<rect x="518.2" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-01-17: 5 submissions</title></rect>
+<rect x="518.2" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-01-18: 3 submissions</title></rect>
+<rect x="518.2" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-19: 1 submissions</title></rect>
+<rect x="518.2" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-01-20: 4 submissions</title></rect>
+<rect x="518.2" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-21: 1 submissions</title></rect>
+<rect x="518.2" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-22: 1 submissions</title></rect>
+<rect x="518.2" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-01-23: 0 submissions</title></rect>
+<rect x="528.3" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-24: 1 submissions</title></rect>
+<rect x="528.3" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-25: 1 submissions</title></rect>
+<rect x="528.3" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-26: 1 submissions</title></rect>
+<rect x="528.3" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-01-27: 2 submissions</title></rect>
+<rect x="528.3" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-01-28: 1 submissions</title></rect>
+<rect x="528.3" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-01-29: 4 submissions</title></rect>
+<rect x="528.3" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-01-30: 0 submissions</title></rect>
+<rect x="538.4" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-01-31: 0 submissions</title></rect>
+<rect x="538.4" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-01: 0 submissions</title></rect>
+<rect x="538.4" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-02: 0 submissions</title></rect>
+<rect x="538.4" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-02-03: 2 submissions</title></rect>
+<rect x="538.4" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-04: 1 submissions</title></rect>
+<rect x="538.4" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-05: 0 submissions</title></rect>
+<rect x="538.4" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-06: 0 submissions</title></rect>
+<rect x="548.5" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-07: 1 submissions</title></rect>
+<rect x="548.5" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-02-08: 2 submissions</title></rect>
+<rect x="548.5" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-09: 1 submissions</title></rect>
+<rect x="548.5" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-02-10: 2 submissions</title></rect>
+<rect x="548.5" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-11: 1 submissions</title></rect>
+<rect x="548.5" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-12: 0 submissions</title></rect>
+<rect x="548.5" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-13: 0 submissions</title></rect>
+<rect x="558.6" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-14: 1 submissions</title></rect>
+<rect x="558.6" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-15: 0 submissions</title></rect>
+<rect x="558.6" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-16: 0 submissions</title></rect>
+<rect x="558.6" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-17: 0 submissions</title></rect>
+<rect x="558.6" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-18: 0 submissions</title></rect>
+<rect x="558.6" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-19: 0 submissions</title></rect>
+<rect x="558.6" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-20: 1 submissions</title></rect>
+<rect x="568.7" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-02-21: 2 submissions</title></rect>
+<rect x="568.7" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-22: 1 submissions</title></rect>
+<rect x="568.7" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-23: 1 submissions</title></rect>
+<rect x="568.7" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-24: 1 submissions</title></rect>
+<rect x="568.7" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-25: 1 submissions</title></rect>
+<rect x="568.7" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-26: 1 submissions</title></rect>
+<rect x="568.7" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-02-27: 0 submissions</title></rect>
+<rect x="578.8" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-02-28: 1 submissions</title></rect>
+<rect x="578.8" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-03-01: 2 submissions</title></rect>
+<rect x="578.8" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-03-02: 0 submissions</title></rect>
+<rect x="578.8" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-03-03: 0 submissions</title></rect>
+<rect x="578.8" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-04: 1 submissions</title></rect>
+<rect x="578.8" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-03-05: 0 submissions</title></rect>
+<rect x="578.8" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-06: 1 submissions</title></rect>
+<rect x="588.9" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-03-07: 2 submissions</title></rect>
+<rect x="588.9" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-08: 1 submissions</title></rect>
+<rect x="588.9" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-09: 1 submissions</title></rect>
+<rect x="588.9" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-10: 1 submissions</title></rect>
+<rect x="588.9" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-11: 1 submissions</title></rect>
+<rect x="588.9" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-12: 1 submissions</title></rect>
+<rect x="588.9" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-13: 1 submissions</title></rect>
+<rect x="599.0" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-14: 1 submissions</title></rect>
+<rect x="599.0" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-15: 1 submissions</title></rect>
+<rect x="599.0" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-16: 1 submissions</title></rect>
+<rect x="599.0" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-17: 1 submissions</title></rect>
+<rect x="599.0" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-18: 1 submissions</title></rect>
+<rect x="599.0" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-03-19: 2 submissions</title></rect>
+<rect x="599.0" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-03-20: 5 submissions</title></rect>
+<rect x="609.1" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-03-21: 3 submissions</title></rect>
+<rect x="609.1" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-22: 1 submissions</title></rect>
+<rect x="609.1" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-03-23: 2 submissions</title></rect>
+<rect x="609.1" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-24: 1 submissions</title></rect>
+<rect x="609.1" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-03-25: 2 submissions</title></rect>
+<rect x="609.1" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-26: 1 submissions</title></rect>
+<rect x="609.1" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-27: 1 submissions</title></rect>
+<rect x="619.2" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-03-28: 2 submissions</title></rect>
+<rect x="619.2" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-03-29: 1 submissions</title></rect>
+<rect x="619.2" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2cbb5d"><title>2026-03-30: 7 submissions</title></rect>
+<rect x="619.2" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-03-31: 0 submissions</title></rect>
+<rect x="619.2" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-04-01: 2 submissions</title></rect>
+<rect x="619.2" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-02: 1 submissions</title></rect>
+<rect x="619.2" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-03: 1 submissions</title></rect>
+<rect x="629.3" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-04-04: 5 submissions</title></rect>
+<rect x="629.3" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-04-05: 5 submissions</title></rect>
+<rect x="629.3" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-04-06: 0 submissions</title></rect>
+<rect x="629.3" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-07: 1 submissions</title></rect>
+<rect x="629.3" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-04-08: 2 submissions</title></rect>
+<rect x="629.3" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-04-09: 5 submissions</title></rect>
+<rect x="629.3" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2cbb5d"><title>2026-04-10: 8 submissions</title></rect>
+<rect x="639.4" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-04-11: 0 submissions</title></rect>
+<rect x="639.4" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-12: 1 submissions</title></rect>
+<rect x="639.4" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-04-13: 2 submissions</title></rect>
+<rect x="639.4" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-04-14: 0 submissions</title></rect>
+<rect x="639.4" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-15: 1 submissions</title></rect>
+<rect x="639.4" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-16: 1 submissions</title></rect>
+<rect x="639.4" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-04-17: 3 submissions</title></rect>
+<rect x="649.5" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-04-18: 3 submissions</title></rect>
+<rect x="649.5" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-19: 1 submissions</title></rect>
+<rect x="649.5" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-04-20: 2 submissions</title></rect>
+<rect x="649.5" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-21: 1 submissions</title></rect>
+<rect x="649.5" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-22: 1 submissions</title></rect>
+<rect x="649.5" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-04-23: 2 submissions</title></rect>
+<rect x="649.5" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-24: 1 submissions</title></rect>
+<rect x="659.6" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-04-25: 2 submissions</title></rect>
+<rect x="659.6" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2cbb5d"><title>2026-04-26: 9 submissions</title></rect>
+<rect x="659.6" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-27: 1 submissions</title></rect>
+<rect x="659.6" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-28: 1 submissions</title></rect>
+<rect x="659.6" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-04-29: 2 submissions</title></rect>
+<rect x="659.6" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-04-30: 1 submissions</title></rect>
+<rect x="659.6" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-01: 3 submissions</title></rect>
+<rect x="669.7" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-02: 2 submissions</title></rect>
+<rect x="669.7" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-03: 1 submissions</title></rect>
+<rect x="669.7" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-04: 1 submissions</title></rect>
+<rect x="669.7" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-05: 2 submissions</title></rect>
+<rect x="669.7" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-05-06: 4 submissions</title></rect>
+<rect x="669.7" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-07: 3 submissions</title></rect>
+<rect x="669.7" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-08: 2 submissions</title></rect>
+<rect x="679.8" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-09: 1 submissions</title></rect>
+<rect x="679.8" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-10: 2 submissions</title></rect>
+<rect x="679.8" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-11: 3 submissions</title></rect>
+<rect x="679.8" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-12: 2 submissions</title></rect>
+<rect x="679.8" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-13: 2 submissions</title></rect>
+<rect x="679.8" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2cbb5d"><title>2026-05-14: 7 submissions</title></rect>
+<rect x="679.8" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-15: 1 submissions</title></rect>
+<rect x="689.9" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-16: 1 submissions</title></rect>
+<rect x="689.9" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-17: 1 submissions</title></rect>
+<rect x="689.9" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-18: 2 submissions</title></rect>
+<rect x="689.9" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-19: 2 submissions</title></rect>
+<rect x="689.9" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-20: 2 submissions</title></rect>
+<rect x="689.9" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-21: 1 submissions</title></rect>
+<rect x="689.9" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-22: 2 submissions</title></rect>
+<rect x="700.0" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-23: 1 submissions</title></rect>
+<rect x="700.0" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-24: 1 submissions</title></rect>
+<rect x="700.0" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-25: 2 submissions</title></rect>
+<rect x="700.0" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-05-26: 4 submissions</title></rect>
+<rect x="700.0" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-05-27: 0 submissions</title></rect>
+<rect x="700.0" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-28: 1 submissions</title></rect>
+<rect x="700.0" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-05-29: 1 submissions</title></rect>
+<rect x="710.1" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-05-30: 2 submissions</title></rect>
+<rect x="710.1" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-05-31: 4 submissions</title></rect>
+<rect x="710.1" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-06-01: 2 submissions</title></rect>
+<rect x="710.1" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-06-02: 2 submissions</title></rect>
+<rect x="710.1" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-03: 1 submissions</title></rect>
+<rect x="710.1" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2cbb5d"><title>2026-06-04: 7 submissions</title></rect>
+<rect x="710.1" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-05: 1 submissions</title></rect>
+<rect x="720.2" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-06: 1 submissions</title></rect>
+<rect x="720.2" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-07: 1 submissions</title></rect>
+<rect x="720.2" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-08: 1 submissions</title></rect>
+<rect x="720.2" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-06-09: 2 submissions</title></rect>
+<rect x="720.2" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-10: 1 submissions</title></rect>
+<rect x="720.2" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-11: 1 submissions</title></rect>
+<rect x="720.2" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-12: 1 submissions</title></rect>
+<rect x="730.3" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-06-13: 2 submissions</title></rect>
+<rect x="730.3" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-06-14: 2 submissions</title></rect>
+<rect x="730.3" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-15: 1 submissions</title></rect>
+<rect x="730.3" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-06-16: 0 submissions</title></rect>
+<rect x="730.3" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-06-17: 2 submissions</title></rect>
+<rect x="730.3" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-06-18: 4 submissions</title></rect>
+<rect x="730.3" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-19: 1 submissions</title></rect>
+<rect x="740.4" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-20: 1 submissions</title></rect>
+<rect x="740.4" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-21: 1 submissions</title></rect>
+<rect x="740.4" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-22: 1 submissions</title></rect>
+<rect x="740.4" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-06-23: 5 submissions</title></rect>
+<rect x="740.4" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-06-24: 0 submissions</title></rect>
+<rect x="740.4" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-06-25: 0 submissions</title></rect>
+<rect x="740.4" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-06-26: 0 submissions</title></rect>
+<rect x="750.5" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-06-27: 0 submissions</title></rect>
+<rect x="750.5" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-06-28: 0 submissions</title></rect>
+<rect x="750.5" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-29: 1 submissions</title></rect>
+<rect x="750.5" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-06-30: 1 submissions</title></rect>
+<rect x="750.5" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-07-01: 6 submissions</title></rect>
+<rect x="750.5" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-07-02: 2 submissions</title></rect>
+<rect x="750.5" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-03: 0 submissions</title></rect>
+<rect x="760.6" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-04: 0 submissions</title></rect>
+<rect x="760.6" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-05: 0 submissions</title></rect>
+<rect x="760.6" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-07-06: 4 submissions</title></rect>
+<rect x="760.6" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-07-07: 2 submissions</title></rect>
+<rect x="760.6" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-07-08: 2 submissions</title></rect>
+<rect x="760.6" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-07-09: 1 submissions</title></rect>
+<rect x="760.6" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-07-10: 2 submissions</title></rect>
+<rect x="770.7" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-11: 0 submissions</title></rect>
+<rect x="770.7" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-07-12: 1 submissions</title></rect>
+<rect x="770.7" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-07-13: 3 submissions</title></rect>
+<rect x="770.7" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-07-14: 3 submissions</title></rect>
+<rect x="770.7" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-07-15: 1 submissions</title></rect>
+<rect x="770.7" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-07-16: 1 submissions</title></rect>
+<rect x="770.7" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-17: 0 submissions</title></rect>
+<rect x="780.8" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-07-18: 1 submissions</title></rect>
+<rect x="780.8" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-07-19: 1 submissions</title></rect>
+<rect x="780.8" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-07-20: 1 submissions</title></rect>
+<rect x="780.8" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-07-21: 2 submissions</title></rect>
+<rect x="780.8" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-07-22: 2 submissions</title></rect>
+<rect x="780.8" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-07-23: 1 submissions</title></rect>
+<rect x="780.8" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-24: 0 submissions</title></rect>
+<rect x="790.9" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-25: 0 submissions</title></rect>
+<rect x="790.9" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-26: 0 submissions</title></rect>
+<rect x="790.9" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-07-27: 2 submissions</title></rect>
+<rect x="790.9" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-28: 0 submissions</title></rect>
+<rect x="790.9" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-29: 0 submissions</title></rect>
+<rect x="790.9" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-30: 0 submissions</title></rect>
+<rect x="790.9" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-07-31: 0 submissions</title></rect>
+<rect x="801.0" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-08-01: 0 submissions</title></rect>
+<rect x="801.0" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-08-02: 2 submissions</title></rect>
+<rect x="801.0" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-08-03: 3 submissions</title></rect>
+<rect x="801.0" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-08-04: 0 submissions</title></rect>
+<rect x="801.0" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-08-05: 1 submissions</title></rect>
+<rect x="801.0" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-08-06: 0 submissions</title></rect>
+<rect x="801.0" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-08-07: 0 submissions</title></rect>
+<rect x="811.1" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-08-08: 0 submissions</title></rect>
+<rect x="811.1" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-08-09: 0 submissions</title></rect>
+<rect x="811.1" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-08-10: 1 submissions</title></rect>
+<rect x="811.1" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-08-11: 0 submissions</title></rect>
+<rect x="811.1" y="176.4" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-08-12: 1 submissions</title></rect>
+<rect x="811.1" y="186.5" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00733a"><title>2026-08-13: 2 submissions</title></rect>
+<rect x="811.1" y="196.6" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-08-14: 4 submissions</title></rect>
+<rect x="821.2" y="136.0" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-08-15: 0 submissions</title></rect>
+<rect x="821.2" y="146.1" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#00a854"><title>2026-08-16: 5 submissions</title></rect>
+<rect x="821.2" y="156.2" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#0e4429"><title>2026-08-17: 1 submissions</title></rect>
+<rect x="821.2" y="166.3" width="8.2" height="8.2" rx="1.8" ry="1.8" fill="#2e2e2e"><title>2026-08-18: 0 submissions</title></rect>
+
+    </g>
+
+    <!-- Heatmap Legend -->
+    <g transform="translate(422, 138)">
+      <text x="0" y="8" font-size="9.5" fill="#777777">Less</text>
+      <rect x="25" y="0" width="8.2" height="8.2" rx="1.8" fill="#2e2e2e"/>
+      <rect x="36" y="0" width="8.2" height="8.2" rx="1.8" fill="#0e4429"/>
+      <rect x="47" y="0" width="8.2" height="8.2" rx="1.8" fill="#00733a"/>
+      <rect x="58" y="0" width="8.2" height="8.2" rx="1.8" fill="#00a854"/>
+      <rect x="69" y="0" width="8.2" height="8.2" rx="1.8" fill="#2cbb5d"/>
+      <text x="81" y="8" font-size="9.5" fill="#777777">More</text>
+    </g>
+
+    <!-- Badges Row at Bottom -->
+    <g transform="translate(16, 155)">
+      <line x1="0" y1="0" x2="538" y2="0" stroke="#333333" stroke-width="1"/>
+      <text x="0" y="16" font-size="10" font-weight="700" fill="#888888">BADGES (4)</text>
+      
+      <g transform="translate(0, 24)">
+        
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="126" height="36" rx="6" fill="#1f1f1f" stroke="#333333" stroke-width="1"/>
+        <text x="14" y="23" font-size="14">🏅</text>
+        <text x="32" y="15" class="badge-title">100 Days &apos;26</text>
+        <text x="32" y="27" class="badge-sub">2026-05-05</text>
+      </g>
+    
+      <g transform="translate(133, 0)">
+        <rect x="0" y="0" width="126" height="36" rx="6" fill="#1f1f1f" stroke="#333333" stroke-width="1"/>
+        <text x="14" y="23" font-size="14">🏅</text>
+        <text x="32" y="15" class="badge-title">50 Days &apos;26</text>
+        <text x="32" y="27" class="badge-sub">2026-03-12</text>
+      </g>
+    
+      <g transform="translate(266, 0)">
+        <rect x="0" y="0" width="126" height="36" rx="6" fill="#1f1f1f" stroke="#333333" stroke-width="1"/>
+        <text x="14" y="23" font-size="14">🏅</text>
+        <text x="32" y="15" class="badge-title">100 Days &apos;25</text>
+        <text x="32" y="27" class="badge-sub">2025-10-17</text>
+      </g>
+    
+      <g transform="translate(399, 0)">
+        <rect x="0" y="0" width="126" height="36" rx="6" fill="#1f1f1f" stroke="#333333" stroke-width="1"/>
+        <text x="14" y="23" font-size="14">🏅</text>
+        <text x="32" y="15" class="badge-title">50 Days &apos;25</text>
+        <text x="32" y="27" class="badge-sub">2025-08-26</text>
+      </g>
+    
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Footer -->
+  <g transform="translate(430, 365)">
+    <text x="0" y="0" text-anchor="middle" font-size="9" font-weight="500" fill="#555555">
+      leetcode.com/u/sachinkumar6174 • Verified LeetCode GraphQL Data
+    </text>
+  </g>
+</svg>
